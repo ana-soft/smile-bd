@@ -109,7 +109,6 @@
       for(const [a,v] of Object.entries(originalAttrs.get(el)))el.setAttribute(a,language==='en'?translate(v):v);
     });
     document.documentElement.lang=language;
-    document.title=language==='en'?'SMILE — Together for a better tomorrow':'SMILE — মানুষের পাশে, সুন্দর আগামীর পথে';
     document.querySelector('meta[name="description"]').content=language==='en'?'SMILE is a social organisation in Sylhet, Bangladesh, working in education, healthcare, the environment and technology.':'সিলেটের সামাজিক সংগঠন SMILE। শিক্ষা, স্বাস্থ্য, পরিবেশ ও প্রযুক্তিতে মানুষের পাশে।';
     document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===language)));
     document.querySelector('#language-status').textContent=language==='en'?'English selected':'বাংলা নির্বাচন করা হয়েছে';
